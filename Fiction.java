@@ -4,7 +4,8 @@ public class Fiction extends Book {
     String genre = "Художественная литература";
 
     public Fiction(String name, String author, int yearOfPublication, int bookID, String department, String genre) {
-        super(name, author, yearOfPublication, bookID, department, genre);
+        super(name, author, yearOfPublication, bookID, department);
+        this.genre=genre;
     }
 
     @Override

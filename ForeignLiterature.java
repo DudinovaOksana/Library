@@ -5,18 +5,18 @@ class ForeignLiterature extends Book{
     int bookID;
     String department;
 
-    public ForeignLiterature(String name, String author, int yearOfPublication, int bookID, String department, String genre) {
-        super(name, author, yearOfPublication, bookID, department, genre);
+    public ForeignLiterature(String name, String author, int yearOfPublication, int bookID, String department) {
+        super(name, author, yearOfPublication, bookID, department);
+
     }
 
-    public ForeignLiterature(){}
+
     {
         name="Mort";
         author="Terry Pratchett";
         yearOfPublication=1987;
         bookID=590;
         department="Иностранная литература";
-        genre="Художественная литература";
     }
     @Override
     public String toString(){

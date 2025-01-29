@@ -1,7 +1,7 @@
 final class ScientificLiterature extends Book{
     static String genre = "Научная литература";
     public ScientificLiterature(String nameBook, String authorBook, int yearOfPublication, int id, String department){
-        super(nameBook,authorBook, yearOfPublication, id, department, genre);
+        super(nameBook,authorBook, yearOfPublication, id, department);
 
     }
     @Override

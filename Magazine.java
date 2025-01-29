@@ -3,7 +3,13 @@ import java.util.Locale;
 class Magazine extends ReadMaterial implements Readability{
   int issueNumber;
   String month;
-    @Override
+
+  public Magazine(String name, String author, int yearOfPublication, int bookID, String department) {
+    super(name, author, yearOfPublication, bookID, department);
+
+  }
+
+  @Override
     public void read() {
     }
   void takeBook(String name, int issueNumber,String month){

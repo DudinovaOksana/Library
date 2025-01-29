@@ -1,12 +1,13 @@
 import java.util.Locale;
 
-public class Comics extends Book implements Readability{
+public class Comics extends ReadMaterial implements Readability{
     String genre="Комиксы";
     Boolean isWeb;
     String country;
 
     Comics(String name, String author, int yearOfPublication, int bookID, String department,String genre,Boolean isWeb, String country){
-        super(name, author, yearOfPublication, bookID, department,genre);
+        super(name, author, yearOfPublication, bookID, department);
+        this.genre=genre;
         this.isWeb=isWeb;
         this.country=country;
     }
